@@ -1,23 +1,37 @@
+// 삼항 연산자(ternary operator)
+
+const a = 1 < 2  // true
+
+if(a){
+    console.log('참')
+}else {
+    console.log('거짓')
+}
+
+console.log(a ? '참' : '거짓')
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 논리 연산자(logical operator)
 
-const a = 1 === 1
-const b = 'AB' === 'AB'
-const c = true
-const d = false
-const e = false
+// const a = 1 === 1
+// const b = 'AB' === 'AB'
+// const c = true
+// const d = false
+// const e = false
 
-console.log(a)  // true
-console.log(b)  // true
-console.log(c)  // true
+// console.log(a)  // true
+// console.log(b)  // true
+// console.log(c)  // true
 
 // 그리고 And 연산자
-console.log('&& :', a && b && c)  // true
-console.log('&& :', a && b && d)  // false
+// console.log('&& :', a && b && c)  // true
+// console.log('&& :', a && b && d)  // false
 // 또는 Or 연산자
-console.log('|| :', a || b)  // true
-console.log('|| :', e || d)  // false
-// 부정 Not 연산자
-console.log('! :', !d) // true
+// console.log('|| :', a || b)  // true
+// console.log('|| :', e || d)  // false
+// 부정 Not
+// console.log('! :', !d) // true
 
 // 비교 연산자(comparison operator)
 
