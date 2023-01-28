@@ -1,3 +1,27 @@
+// 산술 연산자(arithmetic operator)
+
+console.log(1 + 2)  // 2
+console.log(5 - 7)  // -2
+console.log(3 * 4)  // 12 
+console.log(10 / 2)  // 5
+console.log(7 % 5)  // 나머지 연산자 // 2
+
+// 할당 연산자(assignment operator)
+
+let a = 2
+// a = a + 1  // 3
+// a += 1  // 3
+// a = a - 1  // 1 
+// a -= 1 // 1
+// a = a * 1  // 2 
+// a *= 1 // 2
+// a = a / 1  // 2
+// a /= 1 // 2
+console.log(a) 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 데이터 타입 확인
 // typeof: 데이터 타입 확인
 
 console.log('Hello World!');
