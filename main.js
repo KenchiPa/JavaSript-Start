@@ -1,3 +1,35 @@
+// 형 변환(Type conversion)
+
+// const a = 1
+// const b = '1'
+
+// console.log(a === b)  // false
+// console.log(a == b)  // true
+
+// Truthy(참 같은 값)
+// true, {}, [], 1, 2, 'false', -12, '3.14' ...
+
+// Falsy(거짓 같은 값)
+// false, '', null, undefined, 0, -0, NaN
+
+// if(true) {
+//     console.log(true)  // true
+// }
+// if(false) {
+//     console.log(false)  // 출력 X
+// }
+// if('false') {
+//     console.log('참 같은 값')  // 참 같은 값
+// }
+// if({}) {
+//     console.log('참 같은 값2')  // 참 같은 값
+// }
+// if(0) {
+//     console.log('거짓 같은 값')  //  출력 X
+// }
+// if(NaN) {
+//     console.log('거짓 같은 값')  //  출력 X
+// }
 
 
 
