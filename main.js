@@ -3,6 +3,207 @@
 
 
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 상속(확장)
+
+// class Vehicle {
+//     constructor(name, wheel) {
+//         this.name = name
+//         this.wheel = wheel
+//     }
+// }
+// const myVehicle = new Vehicle('운송수단', 2)
+// console.log(myVehicle)
+
+// class Bicycle extends Vehicle {
+//     constructor(name, wheel) {
+//         super(name, wheel)
+//     }
+// }
+// const myBicycle = new Bicycle('삼천리', 2)
+// const daughtersBicycle = new Bicycle('세발', 3)
+// console.log(myBicycle)
+// console.log(daughtersBicycle)
+
+// class Car extends Vehicle {
+//     constructor(name, wheel, license) {
+//         super(name, wheel)
+//         this.license = license
+//     }
+// }
+// const myCar = new Car('벤츠', 4, true)
+// const daughtersCar = new Car('포르쉐', false)
+
+// console.log(myCar)
+// console.log(daughtersCar)
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ES6 Classes: ES6에서 처음 등장한 JS Class 패턴
+// Before
+// const kenchi1 = {
+//     name: 'Kenchi',
+//     normal: function() {
+//         console.log(this.name)
+//     },
+//     arrow: () => {
+//         console.log(this.name)
+//     }
+// }
+
+// // After
+// const kenchi = {
+//     name: 'Kenchi',
+//     normal() {
+//         console.log(this.name)
+//     },
+//     arrow: () => {
+//         console.log(this.name)
+//     }
+// }
+
+// kenchi1.normal()
+// kenchi1.arrow()
+// kenchi.normal()
+// kenchi.arrow()
+
+// // Before
+// function User(first, last){
+//     this.firstName = first
+//     this.lastName = last
+// }
+// User.prototype.getFullName = function(){
+//     return `${this.firstName} ${this.lastName}`
+// }
+
+// // After
+// class User1 {
+//     constructor(first, last) {
+//         this.firstName = first
+//         this.lastName = last
+//     }
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// const kenchi2 = new User('Kenchi', 'Papa')
+// const amy = new User('Amy', 'Papa')
+// const neo = new User('Neo', 'Papa')
+// const kenchi3 = new User1('Kenchi', 'Papa')
+// const amy1 = new User1('Amy', 'Papa')
+// const neo1 = new User1('Neo', 'Papa')
+
+// console.log(kenchi2)
+// console.log(amy.getFullName())
+// console.log(neo.getFullName())
+// console.log(kenchi3)
+// console.log(amy1.getFullName())
+// console.log(neo1.getFullName())
+
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// this
+// 일반(Normal) 함수는 호출 위치에 따라 this 정의
+// 화살표(Arrow) 함수는 자신이 선언된 함수 범위에서 this 정의
+
+// const kenchi = {
+//     name: 'Kenchi',
+//     normal: function() {
+//         console.log(this.name)
+//     },
+//     arrow: () => {
+//         console.log(this.name)
+//     }
+// }
+// kenchi.normal()  // Kenchi
+// kenchi.arrow()  // undefined
+
+// const amy = {
+//     name: 'Amy',
+//     normal: kenchi.normal,
+//     arrow: kenchi.arrow
+// }
+// amy.normal()
+// amy.arrow()
+
+// function User(name){
+//     this.name = name
+// }
+// User.prototype.normal = function() {
+//     console.log(this.name)
+// }
+// User.prototype.arrow = () => {
+//     console.log(this.name)
+// }
+
+// const kenchi1 = new User('Kenchi')
+
+// kenchi1.normal()
+// kenchi1.arrow()
+
+// const timer = {
+//     name1: 'Kenchi!',
+//     timeoutNormal: function() {
+//         setTimeout(function() {
+//             console.log(this.name1)
+//         }, 2000)
+//     },
+//     timeoutArrow: function() {
+//         setTimeout(() => {
+//             console.log(this.name1)
+//         }, 2000)
+//     }
+// }
+// timer.timeoutNormal()
+// timer.timeoutArrow()
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 생성자 함수(prototype)
+
+// const kenchi = {
+//     firstName: 'KENCHI',  // 속성
+//     lastName: 'PAPA',  // 속성
+//     // 메서드
+//     // this가 소속되어져 있는 함수가 실행되는 그 객체 데이터를 지칭한다.
+//     getFullName: function(){  
+//         return `${this.firstName} ${this.lastName}`  
+//     }
+// }
+
+// console.log(kenchi)
+// console.log(kenchi.getFullName())
+
+// function User(first, last){
+//     this.firstName = first
+//     this.lastName = last
+// }
+// User.prototype.getFullName = function(){
+//     return `${this.firstName} ${this.lastName}`
+// }
+
+// const kenchi1 = new User('Kenchi', 'Papa')
+// const amy = new User('Amy', 'Papa')
+// const neo = new User('Neo', 'Papa')
+
+// console.log(kenchi1)
+// console.log(amy)
+// console.log(neo)
+// console.log(kenchi1.getFullName())
+// console.log(amy.getFullName())
+// console.log(neo.getFullName())
+
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 콜백(Callback)
 // 함수의 인수로 사용되는 함수
 // 실행 위치를 보장하는 용도로 사용을 하기도 한다.
