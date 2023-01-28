@@ -1,3 +1,54 @@
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 화살표 함수
+// (매개변수) => {} vs function (매개변수) {}
+
+// 일반 함수
+// const double = function(x) {
+//     return x * 2
+// }
+// console.log('double: ', double(7))
+
+// 화살표 함수
+// const doubleArrow = (x) => {
+//     return x * 2
+// }
+// console.log('doubleArrow: ', doubleArrow(7))
+
+// 화살표 함수 축약형
+// const doubleArrow1 = x => x * 2
+// console.log('doubleArrow1: ', doubleArrow1(7))
+
+// 화살표 함수 축약형(객체)
+// const doubleArrow2 = x => ({
+//     name: 'KENCHI'
+// })
+// console.log('doubleArrow2: ', doubleArrow2(7))
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 함수 복습
+
+// arguments: 함수 안에서 따로 매개변수를 지정하지 않아도 arguments라는 객체를 사용할 수 있다.
+//            함수 안에서 언제든지 사용 가능.
+// function sum(){
+//     console.log(arguments)
+//     return arguments[0] + arguments[1]
+// }
+
+// 일반적으로 이름을 지정해서 인수가 어떤 의미인지를 조금은 명시적으로 나타내는 것이 권장.
+// function sum1(x, y){
+//     return x + y
+// }
+
+// console.log(sum(7, 3))
+// console.log(sum1(7, 3))
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 형 변환(Type conversion)
 
 // const a = 1
