@@ -1,6 +1,121 @@
 
 
 
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 콜백(Callback)
+// 함수의 인수로 사용되는 함수
+// 실행 위치를 보장하는 용도로 사용을 하기도 한다.
+
+// setTimeout(함수, 시간)
+
+// function timeout(){
+//     setTimeout(() => {
+//         console.log('KENCHI1')
+//     }, 3000)
+// }
+
+// timeout()
+// console.log('Done1')
+// // Done KENCHI
+
+// function timeout2(callBack){
+//     setTimeout(() => {
+//         console.log('KENCHI2')
+//         callBack()  
+//     }, 3000)
+// }
+
+// timeout2(() => {
+//     console.log('Done2')
+// })
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 타이머 함수
+// setTimeout(함수, 시간): 일정 시간 후 함수 실행
+// setInterval(함수, 시간): 시간 간격마다 함수 실행
+// clearTimeout(): 설정된 Timeout 함수를 종료
+// clearInterval(): 설정된 Interval 함수를 종료
+
+// const timer1 = setTimeout(function(){
+//     console.log('KENCHI')
+// }, 3000)
+
+// // 화살표 함수 사용
+// const timer = setTimeout(() => {
+//     console.log('KENCHI')
+// }, 3000)
+
+// const h1El = document.querySelector('h1')
+// h1El.addEventListener('click', () => {
+//     clearTimeout(timer)
+//     clearTimeout(timer1)
+// })
+
+// const timer3 = setInterval(function(){
+//     console.log('KENCHI')
+// }, 3000)
+
+// // 화살표 함수 사용
+// const timer4 = setInterval(() => {
+//     console.log('KENCHI')
+// }, 3000)
+
+// h1El.addEventListener('click', () => {
+//     clearInterval(timer3)
+//     clearInterval(timer4)
+// })
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 호이스팅(Hoisting)
+// 함수 선언부가 유효범위 최상단으로 끌어올려지는 현상
+
+// const b = 7
+
+// double1()
+
+// function double1(){
+//     console.log('double1: ', b * 2)
+// }
+
+// const a = 7
+
+// double()
+
+// const double = function() {
+//     console.log('double: ', a * 2)
+// }
+
+// Uncaught TypeError: double is not a function 
+// 함수표현 이전에 호출이되면 Error 발생
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 즉시실행함수(함수의 생성과 동시 호출)
+// IIFE, Immediately-Invoked Function Expression
+
+// const a = 7
+// function double() {
+//     console.log(a * 2)
+// }
+// double();
+
+// // 즉시실행함수1 - (함수)()
+// (function () {
+//     console.log(a * 2)
+// })();
+
+// // 즉시실행함수2 - (함수())
+// (function () {
+//     console.log(a * 2)
+// }());
+
+
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 화살표 함수
 // (매개변수) => {} vs function (매개변수) {}
