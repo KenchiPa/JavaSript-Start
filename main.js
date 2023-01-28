@@ -1,20 +1,51 @@
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 변수 유효범위(Variable Scope)
+// var, let, const
+// let, const : 범위 - 블록 
+// var : 범위 - 함수
+
+// function scope(){
+//     if(true){
+//         const a = 123
+//         console.log('scope :', a)  // scope : 123
+//     }
+//     // console.log(a)  // Uncaught ReferenceError: a is not defined 
+    
+// }
+
+// function scope2(){
+//     if(true){
+//         var b = 123
+//         console.log('scope2 :', b)  // scope : 123
+//     }
+//         console.log('scope2 :', b)  // scope : 123
+    
+// }
+// scope()
+// scope2()
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 반복문 (For statement)
 // for (시작조건; 종료조건; 변화조건) {}
 
-const ulEl = document.querySelector('ul')
+// const ulEl = document.querySelector('ul')
 
-console.log(ulEl)
+// console.log(ulEl)
 
-for (let i = 0; i < 10; i += 1){
-    const li = document.createElement('li')  // li태그 생성
-    li.textContent = `list-${i + 1}`  // li태그 내용으로 생성
-    if((i + 1) % 2 === 0){  // 짝수일 경우
-        li.addEventListener('click', function(){  // 클릭 시 li.textContent 출력
-            console.log(li.textContent)
-        })
-    }
-    ulEl.appendChild(li)  // 자식요소로 삽입
-}
+// for (let i = 0; i < 10; i += 1){
+//     const li = document.createElement('li')  // li태그 생성
+//     li.textContent = `list-${i + 1}`  // li태그 내용으로 생성
+//     if((i + 1) % 2 === 0){  // 짝수일 경우
+//         li.addEventListener('click', function(){  // 클릭 시 li.textContent 출력
+//             console.log(li.textContent)
+//         })
+//     }
+//     ulEl.appendChild(li)  // 자식요소로 삽입
+// }
 
 
 
