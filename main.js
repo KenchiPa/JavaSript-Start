@@ -1,6 +1,121 @@
 
 
 
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 배열(2)
+// .filter()
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', 'Banana', 'Cherry']
+
+// const a = numbers.map(number => {
+//     return number < 3
+// })
+// console.log(a)
+
+// const b = numbers.filter(number => {
+//     return number < 3
+// })
+// console.log(b)
+
+// console.log(numbers)
+
+// // .find() .findIndex()
+// const c = fruits.find(fruit => {
+//     return /^B/.test(fruit)
+// })
+// console.log(c)
+
+// const d = fruits.findIndex(fruit => {
+//     return /^B/.test(fruit)
+// })
+// console.log(d)
+
+// // .includes()
+// const e = numbers.includes(3)
+// console.log(e)
+
+// const f = fruits.includes('KENCHI')
+// console.log(f)
+
+// // .push() .unshift()
+// // 원본 수정됨 주의
+// numbers.push(5)
+// console.log(numbers)
+
+// numbers.unshift(0)
+// console.log(numbers)
+
+// // .reverse()
+// // 원본 수정됨 주의
+// numbers.reverse()
+// fruits.reverse()
+
+// console.log(numbers)
+// console.log(fruits)
+
+// // .splice()
+// // 원본 수정됨 주의
+// numbers.splice(2, 2)
+// console.log(numbers)
+
+// numbers.splice(2, 0, 999)
+// console.log(numbers)
+
+// numbers.splice(2, 1, 1000)
+// console.log(numbers)
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 배열(1)
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', 'Banana', 'Cherry']
+
+// console.log(numbers)
+// console.log(fruits)
+// console.log(numbers[0])
+// console.log(fruits[0])
+
+// // .length
+// console.log(numbers.length)
+// console.log(fruits.length)
+// console.log([1, 2].length)
+
+// console.log([].length)
+
+// // .concat(): 2개의 배열 데이터를 병합해서 새로운 배열데이터를 반환
+// console.log(numbers.concat(fruits))
+// console.log(numbers)
+// console.log(fruits)
+
+// // .forEach(): 배열 데이터의 갯수만큼 콜백함수가 반복 실행이 된다.
+// fruits.forEach(function(element, index, array){
+//     console.log(element, index, array)
+// })
+
+// // .map(): 인수로 사용하는 콜백의 내부에서 반환하는 하나의 데이터를 가지고, 그 데이터들을 모아서 새로운 배열로 반환한다.
+
+// const a = fruits.forEach(function(fruit, index){
+//     console.log(`${fruit}-${index}`)
+// })
+// console.log(a)
+
+// const b = fruits.map(function(fruit, index){
+//     return `${fruit}-${index}`
+// })
+// console.log(b)
+
+// const c = fruits.map(function(fruit, index){
+//     return {
+//         id: index,
+//         name: fruit
+//     }
+// })
+// console.log(c)
+
+
+
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Math
 
