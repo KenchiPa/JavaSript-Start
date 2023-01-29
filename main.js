@@ -1,3 +1,102 @@
+// 전개 연산자(Spread)
+
+// const fruits = ['Apple', 'Banana', 'Cherry', 'A', 'B']
+// console.log(fruits)
+// console.log(...fruits)  // 전개 연산자
+// // console.log('Apple', 'Banana', 'Cherry')
+
+// function toObject(a, b, c, ...d) {
+//     return {
+//         a: a,
+//         b: b,
+//         c: c,
+//         d: d
+//     }
+// }
+// console.log(toObject(...fruits))
+// console.log(toObject(fruits[0], fruits[1], fruits[2], fruits[3]))
+
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 구조 분해 할당(Destructuring assignment)
+// 비구조화 할당
+// const user = {
+//     name: 'Kenchi',
+//     age: 31,
+//     email: 'kenchi6734@naver.com',
+//     to: 'America'
+// }
+// const {name: username, age, email, address, from = 'Korea', to = 'Jeju'} = user
+// // E.g, user.address
+
+// console.log(`사용자의 이름은 ${name}입니다.`)
+// console.log(`사용자의 이름은 ${username}입니다.`)
+// console.log(`${name}의 나이는 ${age}세 입니다.`)
+// console.log(`${name}의 이메일 주소는 ${email}입니다.`)
+// console.log(address)
+// console.log(from)
+// console.log(to)
+
+// const fruits = ['Apple', 'Banana', 'Cherry']
+// const [a, b, c, d] = fruits
+// console.log(a, b, c, d)
+// const [ , , e] = fruits
+// console.log(e)
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 객체(Object)
+// const userAge = {
+//     name: 'Kenchi',
+//     age: 31
+// }
+// const userEmail = {
+//     name: 'Kenchi',
+//     email: 'kenchi6734@naver.com'
+// }
+
+// const target = Object.assign(userAge, userEmail)
+// console.log(target)
+// console.log(userAge)
+// console.log(userEmail)
+// console.log(target === userAge)
+// console.log(target === userEmail)
+
+// const a = {
+//     k: 123
+// }
+// const b = {
+//     k: 123
+// }
+// console.log(a === b)
+
+// const target2 = Object.assign({}, userAge, userEmail)
+// console.log(target2)
+// console.log(userAge)
+// console.log(userEmail)
+// console.log(target2 === userAge)
+// console.log(target2 === userEmail)
+
+// const user = {
+//     name: 'KENCHI',
+//     age: 31,
+//     email: 'kenchi6734@naver.com'
+// }
+
+// const keys = Object.keys(user)
+// console.log(keys)
+// // ['name', 'age', 'email]
+
+// // user.email === user['email']
+// console.log(user['email'])
+
+// const values = keys.map(key => user[key])
+// console.log(values)
 
 
 
