@@ -1,3 +1,66 @@
+import _ from 'lodash'
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 얕은 복사(Shallow copy), 깊은 복사(Deep copy)
+// const user = {
+//     name: 'Kenchi',
+//     age: 31,
+//     emails: ['kenchi6734@naver.com']
+// }
+// const copyUser = user
+// const copyUser2 = Object.assign({}, user)
+// console.log(copyUser === user)
+// console.log(copyUser2 === user)
+
+// user.age = 20
+// console.log('user', user)
+// console.log('copyUser', copyUser)
+// console.log('copyUser2', copyUser2)
+
+// console.log('------')
+// console.log('------')
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 데이터 불변성(Immutability)
+// 원시 데이터: String, Number, Boolean, undefined, null
+// 참조형 데이터: Object, Array, Function
+// -----------------------------------------------------
+// |1:         |2:         |3:         |4:
+// -----------------------------------------------------
+// 원시 데이터
+// let a = 1
+// let b = 4
+// console.log(a, b, a === b)
+// b = a
+// console.log(a, b, a === b)
+// a = 7
+// console.log(a, b, a === b)
+// let c = 1
+// console.log(b, c, b === c)
+
+// // -----------------------------------------------------
+// // |1: {    }   |2: {    }   |3: {    }   |4: {    }   
+// // -----------------------------------------------------
+// // 참조형 데이터
+// let A = { k: 1}
+// let B = { k: 1}
+// console.log(A, B, A === B)
+// A.K = 7
+// B = A
+// console.log(A, B, A === B)
+// A.K = 2
+// console.log(A, B, A === B)
+// let C = B
+// console.log(A, B, C, A === C)
+// A.K = 9
+// console.log(A, B, C, A === C)
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 전개 연산자(Spread)
 
 // const fruits = ['Apple', 'Banana', 'Cherry', 'A', 'B']
