@@ -1,6 +1,45 @@
 
 
 
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// JS 데이터
+
+// String: "", '', ``
+// Number
+// Boolean: true, false
+// undefined
+// null
+// Array: []
+// Object: {}
+
+// String.prototype.indexOf()
+// const result = 'Hello world!'.indexOf('world')
+// console.log(result)  // 6
+
+// const result1 = 'Hello world!'.indexOf('Kenchi')
+// console.log(result1)  // -1
+
+// const str = '0123'
+// console.log(str.length)  // 4
+
+// const str1 = 'Hello world!'
+// console.log(str1.indexOf('Kenchi') !== -1)  // false
+
+// const str2 = 'Hello world!'
+// console.log(str2.slice(0, 3))   // Hel slice(x, y): x에서 시작해서 y직전까지 잘라낼 것이다 라는 것
+// console.log(str2.replace('world', 'KENCHI'))  // Hello KENCHI!
+// console.log(str2.replace(' world!', ''))  // Hello
+
+// const str3 = 'kenchi6734@naver.com'
+// console.log(str3.match(/.+(?=@)/))
+// console.log(str3.match(/.+(?=@)/)[0])
+
+// const str4 = '    Hello world   '
+// console.log(str4)  //     Hello world   
+// console.log(str4.trim())  // Hello world
+
+
+
 
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 상속(확장)
