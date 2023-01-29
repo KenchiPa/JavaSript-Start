@@ -2,6 +2,43 @@
 
 
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Math
+
+// 절대값
+// console.log('abs: ', Math.abs(-12))
+// // 최소값
+// console.log('min: ', Math.min(2, 8))
+// // 최대값
+// console.log('max: ', Math.max(2, 8))
+// // 올림값
+// console.log('ceil: ', Math.ceil(3.14))
+// // 내림값
+// console.log('floor: ', Math.floor(3.14))
+// // 반올림값
+// console.log('round: ', Math.round(3.14))
+// // 반올림값
+// console.log('round: ', Math.round(3.5))
+// // 랜덤수
+// console.log('random: ', Math.random())
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// const pi = 3.14159265358979
+// console.log(pi)  // 3.14159265358979
+
+// const str = pi.toFixed(2)
+// console.log(str)  // 3.14
+// console.log(typeof str)  // string
+
+// const integer = parseInt(str)
+// const float = parseFloat(str)
+// console.log(integer)  // 3
+// console.log(float)  // 3.14
+// console.log(typeof integer, typeof float)  // number number
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // JS 데이터
 
 // String: "", '', ``
