@@ -1,6 +1,38 @@
 
 
 
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Storage
+// const user = {
+//     name: 'KENCHI',
+//     age: 31,
+//     emails: [
+//         'kenchi6734@naver.com',
+//         'test@naver.com'
+//     ]
+// }
+
+// // localStorage 객체 데이터 수정
+// // 1. 가져온다
+// const str = localStorage.getItem('user')
+// // 2. JS화 시킨다
+// const obj = JSON.parse(str)
+// // 3. 새로운 데이터를 할당한다
+// obj.age = 22
+// console.log(obj)
+// // 4. 로컬저장소에 저장한다.(문자화)
+// localStorage.setItem('user', JSON.stringify(obj))
+
+
+// localStorage.setItem('user', JSON.stringify(user));  // key: user  value: {"name":"KENCHI","age":31,"emails":["kenchi6734@naver.com","test@naver.com"]}
+
+// console.log(JSON.parse(localStorage.getItem('user')));  // (key)
+
+// localStorage.removeItem('user');
+
+
+
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // JSON(JavaScript Object Notation)
 // 자바스크립트의 객체 표기법
