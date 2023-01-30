@@ -1,6 +1,35 @@
 
 
 
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// JSON(JavaScript Object Notation)
+// 자바스크립트의 객체 표기법
+
+// import myData from './myData.json'  // 확장자는 js파일만 생략이 가능하다.
+
+// console.log(myData)
+
+// const user = {
+//     name: 'KENCHI',
+//     age: 31,
+//     emails: [
+//         'kenchi6734@naver.com',
+//         'test@naver.com'
+//     ]
+// }
+// console.log('user', user)
+
+// // JSON.stringfy(): 특정 데이터를 JSON의 포맷으로 문자 데이터화 시키는 용도.
+// const str = JSON.stringify(user)
+// console.log('str', str)
+// console.log(typeof str)
+
+// // JSON.parse(): 문자 데이터를 자바 스크립트의 활용할 수 있는 데이터로 재조립하는 용도.
+// const obj = JSON.parse(str)
+// console.log('obj', obj)
+// console.log(typeof obj)
+
+
 
 
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
