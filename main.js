@@ -1,6 +1,84 @@
-import _ from 'lodash'
+
+
+
+
 
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// import _ from 'lodash'
+
+// const usersA = [
+//     {userId: '1', name: 'KENCHI'},
+//     {userId: '2', name: 'Neo'}
+// ]
+
+// const usersB = [
+//     {userId: '1', name: 'KENCHI'},
+//     {userId: '3', name: 'Amy'}
+// ]
+// const usersC = usersA.concat(usersB)  // 병합
+// console.log('concat', usersC)
+// // uniqBy(중복된 데이터가 있는 배열 데이터, 중복을 구분할 고유한 속성)
+// console.log('uniqBy', _.uniqBy(usersC, 'userId'))
+
+// // 중복이 발생할 수 있는 데이터가 2개 이상 존재하고, 이것이 아직 합쳐지기 전이라면 
+// // 고유하게 합칠 수 있다.
+// // unionBy(1번 데이터, 2번 데이터, 중복을 구분할 고유한 속성)
+// const usersD = _.unionBy(usersA, usersB, 'userId')
+// console.log('unionBy', usersD)
+
+// const users = [
+//     {userId: '1', name: 'KENCHI'},  // Index: 0
+//     {userId: '2', name: 'Neo'},  // Index: 1
+//     {userId: '3', name: 'Amy'},  // Index: 2
+//     {userId: '4', name: 'Evan'},  // Index: 3
+//     {userId: '5', name: 'Lewis'},  // Index: 4
+// ]
+
+// // _.find(찾을 배열 데이터, 조건): 조건이 포함되어 있는 객체를 찾는다.
+// // _.findIndex(찾을 배열 데이터, 조건): 조건이 포함되어 있는 객체의 Index번호를 반환한다.
+// const foundUser = _.find(users, {name: 'Amy'})
+// const foundUserIndex = _.findIndex(users, {name: 'Amy'})
+// console.log(foundUser)
+// console.log(foundUserIndex)
+
+// // Before
+// console.log(users)
+
+// // After
+// // _.remove(찾을 배열 데이터, 조건): 조건이 맞는 데이터는 찾아서 삭제한다.
+// _.remove(users, {name: 'KENCHI'})
+// console.log(users)
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// import _ from 'lodash' // From 'node_modules'
+// import getType from './getType'  // getType.js
+// // as로 별칭을 지정했을 경우, 별칭으로만 사용할 수 있다.
+// // 1.
+// // import { random, user as Kenchi } from './getRandom'  // getRandom.js
+
+// // 2.
+// // * 와일드카드(Wildcard Character, *)는 여러 내용을 한꺼번에 지정할 목적으로 사용하는 기호를 가리킵니다.
+// // random과 user를 한번에 꺼내오고 싶을 경우 아래처럼 작성.
+// import * as R from './getRandom'
+
+// console.log(_.camelCase('the hello world'))
+// console.log(getType([1, 2, 3]))
+// // console.log(random(), random())
+// // console.log(user)  // user is not defined
+// // console.log(kenchi)
+// console.log(R)
+
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//import _ from 'lodash'
+
+
 // 얕은 복사(Shallow copy), 깊은 복사(Deep copy)
 // const user = {
 //     name: 'Kenchi',
